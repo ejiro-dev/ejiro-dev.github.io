@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejiro Emmanuel - Skills Showcase</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        .card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 650px;
+            padding: 36px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        .name { font-size: 26px; font-weight: 800; color: #38bdf8; letter-spacing: -0.02em; }
+        .role { font-size: 15px; font-weight: 600; color: #94a3b8; margin-top: 4px; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .skill-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .skill-box h3 { font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 6px; }
+        .skill-box p { font-size: 12px; color: #94a3b8; line-height: 1.4; }
+        .projects {
+            background: rgba(56, 189, 248, 0.05);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .projects h3 { font-size: 13px; font-weight: 700; color: #38bdf8; text-transform: uppercase; margin-bottom: 8px; }
+        .projects p { font-size: 12px; color: #cbd5e1; line-height: 1.5; margin-bottom: 6px; }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #64748b;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="name">Ejiro Emmanuel</div>
+            <div class="role">Full-Stack Software & Mobile App Developer</div>
+        </div>
+
+        <div class="grid">
+            <div class="skill-box">
+                <h3>📱 Mobile App Development</h3>
+                <p>Cross-platform iOS & Android apps built with smooth UI, responsive audio/media pipelines, and state management.</p>
+            </div>
+            <div class="skill-box">
+                <h3>💻 Full-Stack Web Development</h3>
+                <p>Dynamic web applications, responsive landing pages, and interactive UI dashboards with robust database integrations.</p>
+            </div>
+            <div class="skill-box">
+                <h3>⚙️ Backend & API Services</h3>
+                <p>Scalable RESTful microservices, authentication systems, rate limiting, and cloud database optimization (Python/FastAPI).</p>
+            </div>
+            <div class="skill-box">
+                <h3>🔒 Software Security & Auditing</h3>
+                <p>Codebase vulnerability reviews, performance optimization (Big-O), and zero-trust engineering standards.</p>
+            </div>
+        </div>
+
+        <div class="projects">
+            <h3>Featured Proof of Work</h3>
+            <p><strong>• Fluxify:</strong> Modern music streaming platform featuring custom audio engines and fluid UX controls.</p>
+            <p><strong>• Enterprise RAG Engine:</strong> Production-ready cloud backend with sub-200ms document search and zero-trust security.</p>
+        </div>
+
+        <div class="footer">
+            <span>✉️ ejiro.emmanuel.dev@gmail.com</span>
+            <span>📞 +44 7481 783640</span>
+            <span>💻 github.com/ejiro-dev</span>
+        </div>
+    </div>
+</body>
+      </html>
+
