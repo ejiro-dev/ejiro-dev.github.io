@@ -1,22 +1,21 @@
-# Ejiro Rickson Emmanuel - Personal Portfolio
+# Ejiro Rickson Emmanuel — Portfolio
 
-A premium, custom-built personal portfolio website designed to showcase my software engineering projects, UI/UX aesthetics, and technical background. 
+A responsive personal developer portfolio built with semantic HTML, CSS and lightweight JavaScript.
 
-## Live Site
-[ejiro-dev.github.io](https://ejiro-dev.github.io/)
+## Preview branch
+The redesign is being developed on `chore/portfolio-job-application-refresh`. The live `main` branch is unchanged until the redesign is reviewed and merged.
 
-## Built With
-* **HTML5** (Semantic structure)
-* **CSS3** (Custom variables, responsive clamp typing, liquid glass UI styling, and cubic-bezier animations)
-* **JavaScript** (Intersection Observers for scroll animations and dynamic DOM manipulation)
+## Stack
+- HTML5
+- CSS custom properties, Grid, Flexbox and responsive media queries
+- Vanilla JavaScript for the accessible quick-links menu and subtle reveal effects
+- Google Fonts: Manrope and DM Mono
 
-## Design Philosophy
-The UI/UX heavily borrows from modern iOS and Apple-style aesthetics, utilizing:
-* Scalable Vector Graphics (SF Symbols)
-* Backdrop-filter blurs for "glassmorphism" cards
-* Smooth, spring-loaded transition states
+## Replace the portrait
+Replace `assets/portrait-placeholder.svg` with your own image when ready. To use a different filename, update the `src` on the `.portrait-image` element in `index.html`. The portrait frame and motion styling are independent of the image file.
 
-## Features
-* Fully responsive layout (Mobile to Desktop)
-* Interactive iOS-style dropdown menu
-* Integrated ATS-friendly resume download
+## Local preview
+Open `index.html` in a browser. No build step or package installation is required.
+
+## Notes
+Project descriptions and technology labels are based on the current project information available for Fluxify, SerenityAI and AI Learning Assistant. Update any project status or stack details as the projects evolve.
