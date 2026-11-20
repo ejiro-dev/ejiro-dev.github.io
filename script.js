@@ -1,43 +1,56 @@
-// --- Scroll Animation Logic ---
-// This makes your sections smoothly fade in when they appear on screen
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15
-};
+const menuButton = document.getElementById("menu-toggle");
+const quickMenu = document.getElementById("quick-menu");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        } else {
-            // Allows the animation to repeat if you scroll back up
-            entry.target.classList.remove('visible'); 
-        }
+function closeMenu() {
+  if (!menuButton || !quickMenu) return;
+  menuButton.setAttribute("aria-expanded", "false");
+  menuButton.setAttribute("aria-label", "Open quick links");
+  quickMenu.classList.remove("menu-open");
+  quickMenu.hidden = true;
+}
+
+if (menuButton && quickMenu) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    if (isOpen) {
+      closeMenu();
+      return;
+    }
+    quickMenu.hidden = false;
+    quickMenu.classList.remove("menu-open");
+    requestAnimationFrame(() => quickMenu.classList.add("menu-open"));
+    menuButton.setAttribute("aria-expanded", "true");
+    menuButton.setAttribute("aria-label", "Close quick links");
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!quickMenu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+
+  quickMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+}
+
+const revealItems = document.querySelectorAll(".project-card, .toolkit-card, .about-content, .cert-copy");
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
     });
-}, observerOptions);
-
-document.querySelectorAll('.fade-in').forEach(element => {
-    observer.observe(element);
-});
-
-
-// --- iOS Resume Menu Logic ---
-// This handles the pop-up behavior of your 3-dot menu
-const iosBtn = document.getElementById('ios-menu-btn');
-const iosDropdown = document.getElementById('ios-dropdown');
-
-if (iosBtn && iosDropdown) {
-    // Toggle menu when clicking the dots
-    iosBtn.addEventListener('click', (e) => {
-        e.stopPropagation(); // Stops the click from instantly closing the menu
-        iosDropdown.classList.toggle('show');
-    });
-
-    // Close the menu if the user taps anywhere else on the screen
-    document.addEventListener('click', (e) => {
-        if (!iosDropdown.contains(e.target) && iosDropdown.classList.contains('show')) {
-            iosDropdown.classList.remove('show');
-        }
-    });
-                              }
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => {
+    item.classList.add("reveal");
+    revealObserver.observe(item);
+  });
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
