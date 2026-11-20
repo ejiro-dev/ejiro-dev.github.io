@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+<title id="title">Temporary illustrated portrait placeholder</title>
+<desc id="desc">An abstract editorial portrait silhouette in muted green and charcoal tones, intended to be replaced with Ejiro's own photograph.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#68775a"/><stop offset=".48" stop-color="#303d32"/><stop offset="1" stop-color="#151d1b"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#d1ef9b" stop-opacity=".65"/><stop offset="1" stop-color="#d1ef9b" stop-opacity="0"/></radialGradient>
+  <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d0d2c5"/><stop offset="1" stop-color="#6d7868"/></linearGradient>
+</defs>
+<rect width="720" height="900" fill="url(#bg)"/>
+<circle cx="535" cy="220" r="260" fill="url(#glow)"/>
+<path d="M70 900c30-210 130-330 290-330s260 120 290 330" fill="#1a2420"/>
+<path d="M205 900c22-170 72-280 155-280s133 110 155 280" fill="url(#shirt)"/>
+<path d="M265 365c0-142 42-230 112-230s112 88 112 230c0 132-49 218-112 218s-112-86-112-218" fill="#8c6855"/>
+<path d="M250 360c-15-158 36-257 137-257 98 0 144 88 119 260-17-42-36-75-65-95-57 42-115 57-191 47z" fill="#171b1b"/>
+<path d="M270 380c-24-18-43 5-35 42 7 35 26 54 44 47M484 380c24-18 43 5 35 42-7 35-26 54-44 47" fill="#8c6855"/>
+<path d="M320 375h25m63 0h25" stroke="#26201d" stroke-width="8" stroke-linecap="round"/>
+<path d="M355 463c22 14 44 14 66 0" fill="none" stroke="#593e35" stroke-width="6" stroke-linecap="round"/>
+<path d="M330 625l30 70 30-70" fill="none" stroke="#202722" stroke-width="10"/>
+<path d="M120 760h480" stroke="#d4f19a" stroke-opacity=".28"/>
+<text x="40" y="75" fill="#eff5e5" opacity=".8" font-family="monospace" font-size="18" letter-spacing="5">PORTRAIT STUDY / ER</text>
+<text x="40" y="840" fill="#eff5e5" opacity=".65" font-family="monospace" font-size="13" letter-spacing="4">REPLACE WITH YOUR PHOTO</text>
+</svg>
