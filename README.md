@@ -1,21 +1,22 @@
-# Ejiro Rickson Emmanuel — Portfolio
+# Ejiro Rickson Emmanuel — Developer Portfolio
 
-A responsive personal developer portfolio built with semantic HTML, CSS and lightweight JavaScript.
+I'm a software developer focused on full-stack web development, AI-powered applications and cybersecurity. I enjoy building practical digital products, understanding how systems work, and applying security-minded thinking to technology.
 
-## Preview branch
-The redesign is being developed on `chore/portfolio-job-application-refresh`. The live `main` branch is unchanged until the redesign is reviewed and merged.
+## Areas of focus
+- **Software development:** frontend and backend web applications, APIs and interactive products.
+- **AI development:** AI-powered tools and applications that solve practical problems.
+- **Cybersecurity:** security principles, threat awareness and secure computing practices.
 
-## Stack
-- HTML5
-- CSS custom properties, Grid, Flexbox and responsive media queries
-- Vanilla JavaScript for the accessible quick-links menu and subtle reveal effects
-- Google Fonts: Manrope and DM Mono
+## Selected projects
+- **Fluxify** — a music player focused on a rich listening experience, local music, playlists, lyrics and custom audio features.
+- **SerenityAI** — a mindful journaling application with AI-assisted reflection.
+- **AI Learning Assistant** — a document-based study companion with AI-assisted questions and explanations.
 
-## Replace the portrait
-Replace `assets/portrait-placeholder.svg` with your own image when ready. To use a different filename, update the `src` on the `.portrait-image` element in `index.html`. The portrait frame and motion styling are independent of the image file.
+## Technologies & tools
+React, Next.js, JavaScript, Python, Node.js, Firebase, Supabase, Streamlit, Git and GitHub.
+
+## Portfolio
+Explore the live portfolio: https://ejiro-dev.github.io/
 
 ## Local preview
 Open `index.html` in a browser. No build step or package installation is required.
-
-## Notes
-Project descriptions and technology labels are based on the current project information available for Fluxify, SerenityAI and AI Learning Assistant. Update any project status or stack details as the projects evolve.
